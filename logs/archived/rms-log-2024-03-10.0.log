@@ -1,0 +1,320 @@
+2024-03-10 10:25:06,782 INFO org.springframework.boot.StartupInfoLogger [main] Starting Application v1.0.0 using Java 11.0.22 on zaag with PID 6852 (/home/mehedi/Documents/Electron/electron-app/resource/rms-backend-1.0.0.jar started by mehedi in /home/mehedi/Documents/Electron/electron-app)
+2024-03-10 10:25:06,788 INFO org.springframework.boot.SpringApplication [main] The following 1 profile is active: "dev"
+2024-03-10 10:25:06,803 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2024-03-10 10:25:10,518 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-10 10:25:11,214 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 684 ms. Found 69 JPA repository interfaces.
+2024-03-10 10:25:13,179 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8050 (http)
+2024-03-10 10:25:13,203 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8050"]
+2024-03-10 10:25:13,204 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2024-03-10 10:25:13,206 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.71]
+2024-03-10 10:25:13,377 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2024-03-10 10:25:13,378 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 6332 ms
+2024-03-10 10:25:14,208 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-10 10:25:14,314 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-03-10 10:25:14,613 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-03-10 10:25:14,812 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2024-03-10 10:25:14,967 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-03-10 10:25:14,995 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2024-03-10 10:26:55,359 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-03-10 10:26:55,375 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-10 10:27:04,226 INFO com.rms.rmsbackend.configs.FirebaseConfig [main] Trying to initialize firebase connection.
+2024-03-10 10:27:04,390 INFO com.rms.rmsbackend.configs.FirebaseConfig [main] Successfully initialize firebase connection.
+2024-03-10 10:27:04,396 INFO com.rms.rmsbackend.configs.StripeConfig [main] Trying to initialize Stripe API key.
+2024-03-10 10:27:04,398 INFO com.rms.rmsbackend.configs.StripeConfig [main] Successfully initialize Stripe API key.
+2024-03-10 10:27:04,474 ERROR com.rms.rmsbackend.constants.SecretKeyHolder [main] null
+2024-03-10 10:27:04,476 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'secretKeyHolder': Invocation of init method failed; nested exception is java.lang.RuntimeException: java.lang.NullPointerException
+2024-03-10 10:27:04,532 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-10 10:27:04,534 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2024-03-10 10:27:04,552 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2024-03-10 10:27:04,556 INFO org.apache.juli.logging.DirectJDKLog [main] Stopping service [Tomcat]
+2024-03-10 10:27:04,605 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-03-10 10:27:04,646 ERROR org.springframework.boot.SpringApplication [main] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'secretKeyHolder': Invocation of init method failed; nested exception is java.lang.RuntimeException: java.lang.NullPointerException
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:440)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.rms.rmsbackend.Application.main(Application.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65)
+Caused by: java.lang.RuntimeException: java.lang.NullPointerException
+	at com.rms.rmsbackend.constants.SecretKeyHolder.generateKey(SecretKeyHolder.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:333)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:157)
+	... 26 common frames omitted
+Caused by: java.lang.NullPointerException: null
+	at com.rms.rmsbackend.utils.EncryptionUtils.generateSecretKey(EncryptionUtils.java:20)
+	at com.rms.rmsbackend.constants.SecretKeyHolder.generateKey(SecretKeyHolder.java:19)
+	... 33 common frames omitted
+2024-03-10 10:28:44,828 INFO org.springframework.boot.StartupInfoLogger [main] Starting Application v1.0.0 using Java 11.0.22 on zaag with PID 7371 (/home/mehedi/Documents/Electron/electron-app/resource/rms-backend-1.0.0.jar started by mehedi in /home/mehedi/Documents/Electron/electron-app)
+2024-03-10 10:28:44,834 INFO org.springframework.boot.SpringApplication [main] The following 1 profile is active: "dev"
+2024-03-10 10:28:44,890 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2024-03-10 10:28:49,339 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-10 10:28:50,288 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 925 ms. Found 69 JPA repository interfaces.
+2024-03-10 10:28:53,479 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8050 (http)
+2024-03-10 10:28:53,501 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8050"]
+2024-03-10 10:28:53,503 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2024-03-10 10:28:53,503 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.71]
+2024-03-10 10:28:53,728 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2024-03-10 10:28:53,729 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 8689 ms
+2024-03-10 10:28:54,591 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-10 10:28:54,754 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-03-10 10:28:55,095 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-03-10 10:28:55,319 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2024-03-10 10:28:55,501 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-03-10 10:28:55,557 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2024-03-10 10:30:36,554 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-03-10 10:30:36,571 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-10 10:30:46,441 INFO com.rms.rmsbackend.configs.FirebaseConfig [main] Trying to initialize firebase connection.
+2024-03-10 10:30:46,631 INFO com.rms.rmsbackend.configs.FirebaseConfig [main] Successfully initialize firebase connection.
+2024-03-10 10:30:46,633 INFO com.rms.rmsbackend.configs.StripeConfig [main] Trying to initialize Stripe API key.
+2024-03-10 10:30:46,635 INFO com.rms.rmsbackend.configs.StripeConfig [main] Successfully initialize Stripe API key.
+2024-03-10 10:30:46,705 ERROR com.rms.rmsbackend.constants.SecretKeyHolder [main] null
+2024-03-10 10:30:46,707 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'secretKeyHolder': Invocation of init method failed; nested exception is java.lang.RuntimeException: java.lang.NullPointerException
+2024-03-10 10:30:46,763 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-10 10:30:46,765 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2024-03-10 10:30:46,782 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2024-03-10 10:30:46,790 INFO org.apache.juli.logging.DirectJDKLog [main] Stopping service [Tomcat]
+2024-03-10 10:30:46,842 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-03-10 10:30:46,883 ERROR org.springframework.boot.SpringApplication [main] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'secretKeyHolder': Invocation of init method failed; nested exception is java.lang.RuntimeException: java.lang.NullPointerException
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:440)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.rms.rmsbackend.Application.main(Application.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65)
+Caused by: java.lang.RuntimeException: java.lang.NullPointerException
+	at com.rms.rmsbackend.constants.SecretKeyHolder.generateKey(SecretKeyHolder.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:333)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:157)
+	... 26 common frames omitted
+Caused by: java.lang.NullPointerException: null
+	at com.rms.rmsbackend.utils.EncryptionUtils.generateSecretKey(EncryptionUtils.java:20)
+	at com.rms.rmsbackend.constants.SecretKeyHolder.generateKey(SecretKeyHolder.java:19)
+	... 33 common frames omitted
+2024-03-10 11:44:01,600 INFO org.springframework.boot.StartupInfoLogger [main] Starting Application v1.0.0 using Java 11.0.22 on zaag with PID 10484 (/home/mehedi/Documents/Electron/electron-app/resource/rms-backend-1.0.0.jar started by mehedi in /home/mehedi/Documents/Electron/electron-app)
+2024-03-10 11:44:01,606 INFO org.springframework.boot.SpringApplication [main] The following 1 profile is active: "dev"
+2024-03-10 11:44:01,621 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2024-03-10 11:44:05,235 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-10 11:44:06,025 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 776 ms. Found 69 JPA repository interfaces.
+2024-03-10 11:44:07,963 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8050 (http)
+2024-03-10 11:44:07,982 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8050"]
+2024-03-10 11:44:07,983 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2024-03-10 11:44:07,983 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.71]
+2024-03-10 11:44:08,111 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2024-03-10 11:44:08,113 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 6350 ms
+2024-03-10 11:44:08,779 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-10 11:44:08,881 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-03-10 11:44:09,178 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-03-10 11:44:09,440 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2024-03-10 11:44:09,570 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-03-10 11:44:09,602 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2024-03-10 11:44:15,691 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-03-10 11:44:15,708 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-10 11:44:24,107 INFO com.rms.rmsbackend.configs.FirebaseConfig [main] Trying to initialize firebase connection.
+2024-03-10 11:44:24,247 INFO com.rms.rmsbackend.configs.FirebaseConfig [main] Successfully initialize firebase connection.
+2024-03-10 11:44:24,251 INFO com.rms.rmsbackend.configs.StripeConfig [main] Trying to initialize Stripe API key.
+2024-03-10 11:44:24,252 INFO com.rms.rmsbackend.configs.StripeConfig [main] Successfully initialize Stripe API key.
+2024-03-10 11:44:26,803 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 3 endpoint(s) beneath base path '/actuator'
+2024-03-10 11:44:26,855 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2291fb1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@213f2d00, org.springframework.security.web.context.SecurityContextPersistenceFilter@4e8e0052, org.springframework.security.web.header.HeaderWriterFilter@34dc40d5, org.springframework.web.filter.CorsFilter@2aaf7354, org.springframework.security.web.authentication.logout.LogoutFilter@2cf29dce, com.rms.rmsbackend.securities.JwtAuthenticationTokenFilter@13cd7ea5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@d3e9629, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@65c97eeb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1606ecbb, org.springframework.security.web.session.SessionManagementFilter@466a5b80, org.springframework.security.web.access.ExceptionTranslationFilter@4addfb95, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@57ce8f63]
+2024-03-10 11:44:26,864 WARN org.springframework.security.config.annotation.web.builders.WebSecurity [main] You are asking Spring Security to ignore Ant [pattern='/']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-03-10 11:44:26,865 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will not secure Ant [pattern='/']
+2024-03-10 11:44:26,866 WARN org.springframework.security.config.annotation.web.builders.WebSecurity [main] You are asking Spring Security to ignore Ant [pattern='/api/1.0.0']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-03-10 11:44:26,867 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will not secure Ant [pattern='/api/1.0.0']
+2024-03-10 11:44:26,867 WARN org.springframework.security.config.annotation.web.builders.WebSecurity [main] You are asking Spring Security to ignore Ant [pattern='/error']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-03-10 11:44:26,868 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will not secure Ant [pattern='/error']
+2024-03-10 11:44:26,869 WARN org.springframework.security.config.annotation.web.builders.WebSecurity [main] You are asking Spring Security to ignore Ant [pattern='/swagger-*/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-03-10 11:44:26,870 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will not secure Ant [pattern='/swagger-*/**']
+2024-03-10 11:44:26,871 WARN org.springframework.security.config.annotation.web.builders.WebSecurity [main] You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-03-10 11:44:26,872 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will not secure Ant [pattern='/webjars/**']
+2024-03-10 11:44:26,872 WARN org.springframework.security.config.annotation.web.builders.WebSecurity [main] You are asking Spring Security to ignore Ant [pattern='/v3/api-docs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-03-10 11:44:26,873 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will not secure Ant [pattern='/v3/api-docs/**']
+2024-03-10 11:44:26,874 WARN org.springframework.security.config.annotation.web.builders.WebSecurity [main] You are asking Spring Security to ignore Ant [pattern='/csrf']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-03-10 11:44:26,875 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will not secure Ant [pattern='/csrf']
+2024-03-10 11:44:26,876 WARN org.springframework.security.config.annotation.web.builders.WebSecurity [main] You are asking Spring Security to ignore Ant [pattern='/favicon.ico']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-03-10 11:44:26,877 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will not secure Ant [pattern='/favicon.ico']
+2024-03-10 11:44:27,663 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8050"]
+2024-03-10 11:44:27,693 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8050 (http) with context path ''
+2024-03-10 11:44:27,731 INFO org.springframework.boot.StartupInfoLogger [main] Started Application in 27.691 seconds (JVM running for 28.871)
+2024-03-10 11:44:28,048 INFO com.rms.rmsbackend.InitialSeeder [main] System Admin role saved
+2024-03-10 11:44:28,070 INFO com.rms.rmsbackend.InitialSeeder [main] Owner role saved
+2024-03-10 11:44:28,090 INFO com.rms.rmsbackend.InitialSeeder [main] Branch Manager role saved
+2024-03-10 11:44:28,124 INFO com.rms.rmsbackend.InitialSeeder [main] Chef role saved
+2024-03-10 11:44:28,165 INFO com.rms.rmsbackend.InitialSeeder [main] Waiter role saved
+2024-03-10 11:44:28,215 INFO com.rms.rmsbackend.InitialSeeder [main] Customer role saved
+2024-03-10 11:44:28,240 INFO com.rms.rmsbackend.InitialSeeder [main] Franchise Owner role saved
+2024-03-10 11:44:28,257 INFO com.rms.rmsbackend.InitialSeeder [main] User Profile role saved
+2024-03-10 11:44:28,283 INFO com.rms.rmsbackend.InitialSeeder [main] User role saved
+2024-03-10 11:44:28,309 INFO com.rms.rmsbackend.InitialSeeder [main] Customer Module role saved
+2024-03-10 11:44:28,329 INFO com.rms.rmsbackend.InitialSeeder [main] Branch role saved
+2024-03-10 11:44:28,354 INFO com.rms.rmsbackend.InitialSeeder [main] Franchise role saved
+2024-03-10 11:44:28,373 INFO com.rms.rmsbackend.InitialSeeder [main] Employee role saved
+2024-03-10 11:44:28,394 INFO com.rms.rmsbackend.InitialSeeder [main] Banner role saved
+2024-03-10 11:44:28,416 INFO com.rms.rmsbackend.InitialSeeder [main] Promo role saved
+2024-03-10 11:44:28,440 INFO com.rms.rmsbackend.InitialSeeder [main] Restaurant Dashboard role saved
+2024-03-10 11:44:28,461 INFO com.rms.rmsbackend.InitialSeeder [main] Restaurant Analytics role saved
+2024-03-10 11:44:28,482 INFO com.rms.rmsbackend.InitialSeeder [main] Restaurant Orders role saved
+2024-03-10 11:44:28,502 INFO com.rms.rmsbackend.InitialSeeder [main] Restaurant Category role saved
+2024-03-10 11:44:28,522 INFO com.rms.rmsbackend.InitialSeeder [main] Restaurant Product role saved
+2024-03-10 11:44:28,553 INFO com.rms.rmsbackend.InitialSeeder [main] Restaurant Requested Product role saved
+2024-03-10 11:44:28,571 INFO com.rms.rmsbackend.InitialSeeder [main] Restaurant Add-On role saved
+2024-03-10 11:44:28,610 INFO com.rms.rmsbackend.InitialSeeder [main] Restaurant Requested Add-On role saved
+2024-03-10 11:44:28,637 INFO com.rms.rmsbackend.InitialSeeder [main] Restaurant Ingredient Category role saved
+2024-03-10 11:44:28,659 INFO com.rms.rmsbackend.InitialSeeder [main] Restaurant Ingredient role saved
+2024-03-10 11:44:28,682 INFO com.rms.rmsbackend.InitialSeeder [main] Restaurant Requested Ingredient role saved
+2024-03-10 11:44:28,702 INFO com.rms.rmsbackend.InitialSeeder [main] Restaurant Supplier role saved
+2024-03-10 11:44:28,729 INFO com.rms.rmsbackend.InitialSeeder [main] Restaurant Catering Product role saved
+2024-03-10 11:44:28,748 INFO com.rms.rmsbackend.InitialSeeder [main] Restaurant Requested Catering Product role saved
+2024-03-10 11:44:28,769 INFO com.rms.rmsbackend.InitialSeeder [main] Restaurant Catering Section role saved
+2024-03-10 11:44:28,790 INFO com.rms.rmsbackend.InitialSeeder [main] Restaurant Catering Menu role saved
+2024-03-10 11:44:28,812 INFO com.rms.rmsbackend.InitialSeeder [main] Restaurant Requested Catering Menu role saved
+2024-03-10 11:44:28,844 INFO com.rms.rmsbackend.InitialSeeder [main] Restaurant Global Config role saved
+2024-03-10 11:44:28,866 INFO com.rms.rmsbackend.InitialSeeder [main] Branch Dashboard role saved
+2024-03-10 11:44:28,884 INFO com.rms.rmsbackend.InitialSeeder [main] Branch Orders role saved
+2024-03-10 11:44:28,905 INFO com.rms.rmsbackend.InitialSeeder [main] Branch Ingredients role saved
+2024-03-10 11:44:28,930 INFO com.rms.rmsbackend.InitialSeeder [main] Branch Agent role saved
+2024-03-10 11:44:28,953 INFO com.rms.rmsbackend.InitialSeeder [main] Branch Global Product role saved
+2024-03-10 11:44:28,977 INFO com.rms.rmsbackend.InitialSeeder [main] Branch Global Addons role saved
+2024-03-10 11:44:29,003 INFO com.rms.rmsbackend.InitialSeeder [main] Branch Product role saved
+2024-03-10 11:44:29,022 INFO com.rms.rmsbackend.InitialSeeder [main] Branch Addons role saved
+2024-03-10 11:44:29,048 INFO com.rms.rmsbackend.InitialSeeder [main] Branch Table role saved
+2024-03-10 11:44:29,072 INFO com.rms.rmsbackend.InitialSeeder [main] Branch Global Catering Product role saved
+2024-03-10 11:44:29,090 INFO com.rms.rmsbackend.InitialSeeder [main] Branch Global Catering Menu role saved
+2024-03-10 11:44:29,115 INFO com.rms.rmsbackend.InitialSeeder [main] Branch Catering Menu role saved
+2024-03-10 11:44:29,140 INFO com.rms.rmsbackend.InitialSeeder [main] Branch Catering Product role saved
+2024-03-10 11:44:29,199 INFO com.rms.rmsbackend.InitialSeeder [main] Branch Kitchen Display role saved
+2024-03-10 11:44:29,218 INFO com.rms.rmsbackend.InitialSeeder [main] POS role saved
+2024-03-10 11:44:29,238 INFO com.rms.rmsbackend.InitialSeeder [main] Branch Stock In & Out role saved
+2024-03-10 11:44:29,263 INFO com.rms.rmsbackend.InitialSeeder [main] Branch Stock Summary role saved
+2024-03-10 11:44:29,283 INFO com.rms.rmsbackend.InitialSeeder [main] Branch Expired Stock role saved
+2024-03-10 11:44:29,302 INFO com.rms.rmsbackend.InitialSeeder [main] Branch Config role saved
+2024-03-10 11:44:29,320 INFO com.rms.rmsbackend.InitialSeeder [main] Branch Catering Order role saved
+2024-03-10 11:44:29,343 INFO com.rms.rmsbackend.InitialSeeder [main] Branch Employee role saved
+2024-03-10 11:44:29,667 INFO com.rms.rmsbackend.InitialSeeder [main] Initial user saved with data: User(id=1, email=admin@mail.com, mobileNumber=+8801688820107, countryCode=bn-BD, fullName=admin, address=null, profilePicture=null, gender=MALE, userType=ADMIN, dateOfBirth=876441600000, disabled=false, banned=false, emailVerified=false, mobileVerified=false, restaurant=null, branch=null, createdAt=1710049469498, updatedAt=0, createdBy=Executor(id=1, customer=null, user=null, executorType=SYSTEM, restaurant=null), updatedBy=null)
+2024-03-10 11:44:29,962 INFO com.rms.rmsbackend.InitialSeeder [main] Initial user saved with data: User(id=2, email=joniyed@zaagsys.com, mobileNumber=+8801794599066, countryCode=BD, fullName=joniyed, address=null, profilePicture=null, gender=MALE, userType=OWNER, dateOfBirth=876441600000, disabled=false, banned=false, emailVerified=false, mobileVerified=false, restaurant=Restaurant(id=1, image=null, owner=null, createdAt=1710049469706, updatedAt=0, createdBy=Executor(id=1, customer=null, user=null, executorType=SYSTEM, restaurant=null), updatedBy=null), branch=null, createdAt=1710049469917, updatedAt=0, createdBy=Executor(id=1, customer=null, user=null, executorType=SYSTEM, restaurant=null), updatedBy=null)
+2024-03-10 11:44:30,321 WARN com.rms.rmsbackend.services.OrderService [ForkJoinPool.commonPool-worker-3] ======================Expired order cancellation started=====================
+2024-03-10 11:44:30,342 WARN com.rms.rmsbackend.services.OrderService [ForkJoinPool.commonPool-worker-3] ======================Expired order cancellation completed=====================
+2024-03-10 11:45:05,958 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8050-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-10 11:45:05,958 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8050-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-03-10 11:45:05,963 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8050-exec-1] Completed initialization in 5 ms
+2024-03-10 11:45:05,980 INFO com.rms.rmsbackend.securities.JwtAuthenticationTokenFilter [http-nio-8050-exec-1] JWT authentication processing for http://localhost:8050/
+2024-03-10 11:45:05,981 INFO com.rms.rmsbackend.utils.SecurityUtil [http-nio-8050-exec-1] Header Token: null
+2024-03-10 11:45:05,981 ERROR com.rms.rmsbackend.utils.SecurityUtil [http-nio-8050-exec-1] Invalid authorization header.
+2024-03-10 11:45:06,011 INFO com.rms.rmsbackend.dao.LogServiceImpl [http-nio-8050-exec-1] Request => url: /, method: GET, ip: 0:0:0:0:0:0:0:1, port: 40296 headers: {sec-fetch-mode=navigate, sec-fetch-site=none, accept-language=en-US,en;q=0.9, cookie=rms-geo-location={%22lat%22:23.8504824%2C%22lng%22:90.3924303%2C%22address%22:%22Beri%20Badh%20Rd%2C%20Dhaka%201230%2C%20Bangladesh%22}; rms-fcm-token=eouo_37_6Srz869Mv_VXyH:APA91bH-prHRSCcKh2X2c4qM79O_O-F6imcaiuNwht_W49D9Fr0bzt7KDDmitT44_2Ir5pptXFsV1M860Zu-_RQaF32QjBYEBxlz0g2wozbGnuqvnoVa5LfFOfvyU253a0jD5i5Gktcg; rms-lang=en-us; rms-selected-branch={%22id%22:2%2C%22i18BranchDetails%22:[{%22language%22:%22en-us%22%2C%22name%22:%22Dhaka%20Branch%22}]%2C%22location%22:{%22address%22:%22Dhaka%20City%22%2C%22googleAddress%22:%22ZAAG%20SYSTEMS%20LTD.%2C%20Road%20-12%2C%20Dhaka%2C%20Bangladesh%22%2C%22city%22:%22Uttara%22%2C%22country%22:%22Bangladesh%22%2C%22zipCode%22:%221207%22%2C%22lat%22:23.8599673%2C%22lng%22:90.4000499}%2C%22image%22:%22test/branches/3657727551101-marissa-grootes-u2Lp8tXIcjw-unsplash.jpg%22%2C%22orderTypes%22:[%22CATERING%22%2C%22DELIVERY%22%2C%22TAKEAWAY%22%2C%22DINE_IN%22]%2C%22enabled%22:true%2C%22defaultBranch%22:false%2C%22hotLine%22:%22+8801920166331%22%2C%22timeZoneOffset%22:21600000%2C%22restaurant%22:{%22id%22:1%2C%22i18RestaurantDetails%22:[{%22language%22:%22en-us%22%2C%22name%22:%22Kabab%20King%22}]%2C%22image%22:null}%2C%22allowForDataCreate%22:false%2C%22openTime%22:701%2C%22closeTime%22:2301%2C%22avgRating%22:0%2C%22totalReview%22:0%2C%22distance%22:0.8126407312451749%2C%22createdAt%22:1703757076591%2C%22updatedAt%22:1705080895078%2C%22createdBy%22:2%2C%22updatedBy%22:4}; _ga=GA1.1.303668826.1706423155; rms-global-config={%22id%22:1%2C%22restaurant%22:{%22id%22:1%2C%22i18RestaurantDetails%22:[{%22language%22:%22bn-bd%22%2C%22name%22:%22%E0%A6%95%E0%A6%BE%E0%A6%AC%E0%A6%BE%E0%A6%AC%20%E0%A6%95%E0%A6%BF%E0%A6%82%22}%2C{%22language%22:%22en-us%22%2C%22name%22:%22Kabab%20King%22}]%2C%22image%22:null}%2C%22valuePerPoint%22:1%2C%22applicableMaxPointValue%22:10%2C%22orderRewardPercentage%22:10%2C%22branchLocateDistance%22:50%2C%22referralBonusPoint%22:5%2C%22registrationDiscountPercentage%22:10%2C%22informationSubmissionDiscount%22:5%2C%22registrationDiscountOrderCount%22:1%2C%22currency%22:%22USD%22%2C%22precisionAfterDecimal%22:%22TWO%22%2C%22active%22:true%2C%22createdAt%22:1703752893287%2C%22updatedAt%22:1706611917335%2C%22createdBy%22:0%2C%22updatedBy%22:2}; rms-branch-config={%22id%22:8%2C%22active%22:true%2C%22taxPercentage%22:8%2C%22orderCancellationTimeInMinute%22:12%2C%22orderCancelFeature%22:false%2C%22maximumCancelCountPerDay%22:3%2C%22branch%22:{%22id%22:2%2C%22i18BranchDetails%22:[{%22restaurantId%22:1%2C%22language%22:%22en-us%22%2C%22name%22:%22Dhaka%20Branch%22}]%2C%22image%22:%22test/branches/3657727551101-marissa-grootes-u2Lp8tXIcjw-unsplash.jpg%22%2C%22hotLine%22:%22+8801920166331%22%2C%22orderTypes%22:[%22DINE_IN%22%2C%22TAKEAWAY%22%2C%22CATERING%22%2C%22DELIVERY%22]}%2C%22createdAt%22:1707895945233%2C%22updatedAt%22:1707896031395%2C%22createdBy%22:4%2C%22updatedBy%22:4}; Webstorm-8cb4f0c4=53e74cd4-6d4d-40d6-8be9-34982ccf73c7, sec-fetch-user=?1, accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7, sec-ch-ua="Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122", sec-ch-ua-mobile=?0, sec-ch-ua-platform="Linux", host=localhost:8050, upgrade-insecure-requests=1, connection=keep-alive, accept-encoding=gzip, deflate, br, zstd, user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36, sec-fetch-dest=document}, parameters: {}, query: null
+2024-03-10 11:45:06,113 INFO com.rms.rmsbackend.dao.LogServiceImpl [http-nio-8050-exec-1] Response => url: /, method: GET, status: 200, ip: 0:0:0:0:0:0:0:1, port: 40296, host: 0:0:0:0:0:0:0:1, x-forwarded-for: null, headers {}, body Success
+2024-03-10 11:45:06,332 INFO com.rms.rmsbackend.securities.JwtAuthenticationTokenFilter [http-nio-8050-exec-2] JWT authentication processing for http://localhost:8050/favicon.ico
+2024-03-10 11:45:06,333 INFO com.rms.rmsbackend.utils.SecurityUtil [http-nio-8050-exec-2] Header Token: null
+2024-03-10 11:45:06,333 ERROR com.rms.rmsbackend.utils.SecurityUtil [http-nio-8050-exec-2] Invalid authorization header.
+2024-03-10 11:45:06,345 WARN org.springframework.web.servlet.DispatcherServlet [http-nio-8050-exec-2] No mapping for GET /favicon.ico
+2024-03-10 11:45:06,352 ERROR com.rms.rmsbackend.exceptions.CustomGlobalExceptionHandler [http-nio-8050-exec-2] No handler found for GET /favicon.ico
+org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /favicon.ico
+	at org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1286)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1049)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at com.rms.rmsbackend.securities.JwtAuthenticationTokenFilter.doFilterInternal(JwtAuthenticationTokenFilter.java:65)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:67)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:186)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2024-03-10 11:45:06,404 INFO com.rms.rmsbackend.dao.LogServiceImpl [http-nio-8050-exec-2] Response => url: /favicon.ico, method: GET, status: 404, ip: 0:0:0:0:0:0:0:1, port: 40296, host: 0:0:0:0:0:0:0:1, x-forwarded-for: null, headers {}, body ApiErrorResponse(status=404 NOT_FOUND, timestamp=Sun Mar 10 05:45:06 UTC 2024, message=Api Endpoint not found for GET:/favicon.ico, errors=[Api Endpoint not found for GET:/favicon.ico], path=/favicon.ico, user=null)
+2024-03-10 11:45:29,244 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-10 11:45:29,248 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-03-10 11:45:29,263 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.

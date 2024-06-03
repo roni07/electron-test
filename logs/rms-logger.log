@@ -1,0 +1,48 @@
+2024-06-03 09:41:27,875 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2024-06-03 09:41:27,907 INFO org.springframework.boot.StartupInfoLogger [main] Starting Application v1.0.0 using Java 11.0.22 on zaag with PID 6955 (/home/mehedi/Documents/Electron/electron-app/rms-backend-1.0.0.jar started by mehedi in /home/mehedi/Documents/Electron/electron-app)
+2024-06-03 09:41:27,910 INFO org.springframework.boot.SpringApplication [main] The following 1 profile is active: "dev"
+2024-06-03 09:41:31,562 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-03 09:41:32,348 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 763 ms. Found 69 JPA repository interfaces.
+2024-06-03 09:41:34,570 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8050 (http)
+2024-06-03 09:41:34,595 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8050"]
+2024-06-03 09:41:34,596 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2024-06-03 09:41:34,596 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.71]
+2024-06-03 09:41:34,776 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2024-06-03 09:41:34,777 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 6703 ms
+2024-06-03 09:41:35,764 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-03 09:41:35,933 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-06-03 09:41:36,267 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-06-03 09:41:36,468 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2024-06-03 09:41:36,628 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-06-03 09:41:36,662 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2024-06-03 09:41:43,519 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-03 09:41:43,532 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-03 09:41:54,130 INFO com.rms.rmsbackend.configs.FirebaseConfig [main] Trying to initialize firebase connection.
+2024-06-03 09:41:54,646 INFO com.rms.rmsbackend.configs.FirebaseConfig [main] Successfully initialize firebase connection.
+2024-06-03 09:41:54,648 INFO com.rms.rmsbackend.configs.StripeConfig [main] Trying to initialize Stripe API key.
+2024-06-03 09:41:54,650 INFO com.rms.rmsbackend.configs.StripeConfig [main] Successfully initialize Stripe API key.
+2024-06-03 09:41:59,512 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 3 endpoint(s) beneath base path '/actuator'
+2024-06-03 09:41:59,684 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@68fd0fba, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3f9e38d4, org.springframework.security.web.context.SecurityContextPersistenceFilter@3c7e7ffd, org.springframework.security.web.header.HeaderWriterFilter@7f129873, org.springframework.web.filter.CorsFilter@7310bc90, org.springframework.security.web.authentication.logout.LogoutFilter@63cf6497, com.rms.rmsbackend.securities.JwtAuthenticationTokenFilter@bdecc21, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@10bf2185, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@14c06f50, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@18a421ea, org.springframework.security.web.session.SessionManagementFilter@ceeb762, org.springframework.security.web.access.ExceptionTranslationFilter@67de5328, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6c07666f]
+2024-06-03 09:41:59,690 WARN org.springframework.security.config.annotation.web.builders.WebSecurity [main] You are asking Spring Security to ignore Ant [pattern='/']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-06-03 09:41:59,710 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will not secure Ant [pattern='/']
+2024-06-03 09:41:59,711 WARN org.springframework.security.config.annotation.web.builders.WebSecurity [main] You are asking Spring Security to ignore Ant [pattern='/api/1.0.0']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-06-03 09:41:59,711 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will not secure Ant [pattern='/api/1.0.0']
+2024-06-03 09:41:59,712 WARN org.springframework.security.config.annotation.web.builders.WebSecurity [main] You are asking Spring Security to ignore Ant [pattern='/error']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-06-03 09:41:59,712 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will not secure Ant [pattern='/error']
+2024-06-03 09:41:59,712 WARN org.springframework.security.config.annotation.web.builders.WebSecurity [main] You are asking Spring Security to ignore Ant [pattern='/swagger-*/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-06-03 09:41:59,713 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will not secure Ant [pattern='/swagger-*/**']
+2024-06-03 09:41:59,718 WARN org.springframework.security.config.annotation.web.builders.WebSecurity [main] You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-06-03 09:41:59,718 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will not secure Ant [pattern='/webjars/**']
+2024-06-03 09:41:59,719 WARN org.springframework.security.config.annotation.web.builders.WebSecurity [main] You are asking Spring Security to ignore Ant [pattern='/v3/api-docs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-06-03 09:41:59,719 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will not secure Ant [pattern='/v3/api-docs/**']
+2024-06-03 09:41:59,719 WARN org.springframework.security.config.annotation.web.builders.WebSecurity [main] You are asking Spring Security to ignore Ant [pattern='/csrf']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-06-03 09:41:59,720 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will not secure Ant [pattern='/csrf']
+2024-06-03 09:41:59,720 WARN org.springframework.security.config.annotation.web.builders.WebSecurity [main] You are asking Spring Security to ignore Ant [pattern='/favicon.ico']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-06-03 09:41:59,721 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will not secure Ant [pattern='/favicon.ico']
+2024-06-03 09:42:00,974 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8050"]
+2024-06-03 09:42:01,011 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8050 (http) with context path ''
+2024-06-03 09:42:01,048 INFO org.springframework.boot.StartupInfoLogger [main] Started Application in 34.836 seconds (JVM running for 36.795)
+2024-06-03 09:42:01,647 INFO com.rms.rmsbackend.InitialSeeder [main] User already exists with credentials: admin@mail.com +8801688820107
+2024-06-03 09:42:01,677 INFO com.rms.rmsbackend.InitialSeeder [main] Initial restaurant already exist
+2024-06-03 09:42:01,699 WARN com.rms.rmsbackend.services.OrderService [ForkJoinPool.commonPool-worker-3] ======================Expired order cancellation started=====================
+2024-06-03 09:42:01,707 WARN com.rms.rmsbackend.services.OrderService [ForkJoinPool.commonPool-worker-3] ======================Expired order cancellation completed=====================
